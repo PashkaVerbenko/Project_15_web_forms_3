@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/" method="post">
+       <h2>Форма реєстрації</h2>
+       <label for="post-name">Ім'я:</label>
+       <div>
+       <input type="text" name="post-name" id="post-name" maxlength="30" placeholder="Введіть ваше ім'я" required autofocus>
+       </div>
+       <label for="post-mail">Email:</label>
+       <div>
+       <input type="text" name="post-mail" id="post-mail" maxlength="30" placeholder="Введіть email" required>
+    </div>
+    <label for="post-phone">Телефон:</label>
+    <div>
+    <input type="tel" name="post-tel" id="post-tel" placeholder="Введіть телефон" maxlength="14" required>
+    </div>
+    <label for="post-pasword">Телефон:</label>
+    <div>
+    <input type="password" name="post-password" id="post-password" required>
+    </div>
+    <p>Виберіть будь-ласка вік:</p>
+    <div>
+    <input type="radio" name="post-age" id="post-age" value="young">0-25 років<br>
+    <input type="radio" name="post-age" id="post-age" value="mature">26-40 років<br>
+    <input type="radio" name="post-age" id="post-age" value="senior">41-55 років<br>
+    <input type="radio" name="post-age" id="post-age" value="
+    old">56-99 років
+    </div>
+    <p>Виберіть будь-ласка автомобіль:</p>
+    <div>
+    <input type="checkbox" name="post-car" id="post-car" value="car">Audi<br>
+    <input type="checkbox" name="post-car" id="post-car" value="car">BMW<br>
+    <input type="checkbox" name="post-car" id="post-car" value="car">Lada
+    </div>
+    <p>Профіт</p>
+    <div>
+    <input type="range" name="post-profit" id="post-profit" min="0" max="100" value="20">
+    </div>
+    <p>Список міст:</p>
+    <div>
+    <select name="city" id="city">
+        <option value="Київ">Київ</option>
+        <option value="Дніпро">Дніпро</option>
+        <option value="Одеса">Одеса</option>
+        <option value="Львів">Львів</option>
+    </select>
+    </div>
+    <p>Залиште коментар:</p>
+    <div>
+        <textarea name="com" id="com" cols="20" rows="5">
+        </textarea>
+    </div>
+    <div>
+    <input type="submit" name="post-submit" id="post-submit" value="Зареєструватися">
+    </div>
+    <div>
+    <input type="reset" name="post-reset" id="post-reset">
+    </div>
+    </form>
+</body>
+</html>
